@@ -1,8 +1,9 @@
-package com.ldh.pattern.factory.abstractfactory;
+package com.ldh.pattern.factory.factorymethod;
 
-/**
- * Created on 2018/5/23.
- */
+import com.ldh.pattern.factory.AmdCpu;
+import com.ldh.pattern.factory.Cpu;
+import com.ldh.pattern.factory.IntelCpu;
+
 public class CpuFactory {
     public static Cpu createCpu(int type){
         Cpu cpu = null;

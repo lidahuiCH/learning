@@ -1,8 +1,9 @@
-package com.ldh.pattern.factory.abstractfactory;
+package com.ldh.pattern.factory.factorymethod;
 
-/**
- * Created on 2018/5/23.
- */
+import com.ldh.pattern.factory.AmdMainboard;
+import com.ldh.pattern.factory.IntelMainboard;
+import com.ldh.pattern.factory.Mainboard;
+
 public class MainboardFactory {
     public static Mainboard createMainboard(int type){
         Mainboard mainboard = null;

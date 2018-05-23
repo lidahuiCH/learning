@@ -1,5 +1,9 @@
 package com.ldh.pattern.factory.simplefactory;
 
+import com.ldh.pattern.factory.AmdMainboard;
+import com.ldh.pattern.factory.IntelMainboard;
+import com.ldh.pattern.factory.Mainboard;
+
 /**
  * Created on 2018/5/23.
  */

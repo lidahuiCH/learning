@@ -1,11 +1,8 @@
-package com.ldh.pattern.factory.simplefactory;
+package com.ldh.pattern.factory.factorymethod;
 
 import com.ldh.pattern.factory.Cpu;
 import com.ldh.pattern.factory.Mainboard;
 
-/**
- * Created on 2018/5/23.
- */
 public class ComputerEngineer {
     /**
      * 定义组装机需要的CPU
