@@ -1,9 +1,22 @@
 package com.ldh.pattern.factory.factorymethod;
 
+/**
+ * Created on 2018/5/24.
+ * 工厂方法模式和简单工厂模式在结构上的不同很明显。工厂方法模式的核心是一个抽象工厂类，而简单工厂模式把核心放在一个具体类上。
+ * 工厂方法模式退化后可以变得很像简单工厂模式。设想如果非常确定一个系统只需要一个具体工厂类，那么不妨把抽象工厂类合并到具体工厂类中去。
+ * 由于只有一个具体工厂类，所以不妨将工厂方法改为静态方法，这时候就得到了简单工厂模式。
+ * 如果系统需要加入一个新的导出类型，那么所需要的就是向系统中加入一个这个导出类以及所对应的工厂类。
+ * 没有必要修改客户端，也没有必要修改抽象工厂角色或者其他已有的具体工厂角色。对于增加新的导出类型而言，这个系统完全支持“开-闭原则”。
+ */
 public class Client {
-    public static void main(String[]args){
-        ComputerEngineer cf = new ComputerEngineer();
-        cf.makeComputer(1,1);
-        cf.makeComputer(2,2);
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        String data = "";
+        ExportFactory exportHtml = new ExportHtmlFactory();
+        ExportFile ef = exportHtml.factory("financial");
+        ef.export(data);
+        ExportFactory exportPdf = new ExportPdfFactory();
+        ExportFile pf = exportPdf.factory("financial");
+        pf.export(data);
     }
 }
