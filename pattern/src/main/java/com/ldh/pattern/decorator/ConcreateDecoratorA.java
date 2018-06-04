@@ -1,8 +1,9 @@
 package com.ldh.pattern.decorator;
 
 
-public class ConcreateDecoratorA extends  Decorator {
+public class ConcreateDecoratorA extends Decorator {
     private String addedState;
+
     @Override
     public void Operation() {
         super.Operation();

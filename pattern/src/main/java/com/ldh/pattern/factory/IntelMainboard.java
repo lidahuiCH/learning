@@ -1,7 +1,5 @@
 package com.ldh.pattern.factory;
 
-import com.ldh.pattern.factory.Mainboard;
-
 /**
  * Created on 2018/5/23.
  */

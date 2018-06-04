@@ -2,7 +2,7 @@ package com.ldh.pattern.strategy;
 
 public class CashContext {
     private CashSuper cashSuper;
-    double rebate =0.9d;
+    double rebate = 0.9d;
 
     public CashContext(String type) {
         switch (type) {

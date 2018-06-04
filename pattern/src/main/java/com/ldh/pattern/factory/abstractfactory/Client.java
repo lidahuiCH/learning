@@ -1,7 +1,7 @@
 package com.ldh.pattern.factory.abstractfactory;
 
 public class Client {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         //创建装机工程师对象
         ComputerEngineer cf = new ComputerEngineer();
         //客户选择并创建需要使用的产品对象

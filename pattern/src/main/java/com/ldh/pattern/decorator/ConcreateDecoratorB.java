@@ -10,7 +10,7 @@ public class ConcreateDecoratorB extends Decorator {
 
     }
 
-    private void AddedBehavior(){
+    private void AddedBehavior() {
         System.out.println("BB");
     }
 }

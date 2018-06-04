@@ -3,7 +3,7 @@ package com.ldh.pattern.factory.factorymethod;
 /**
  * Created on 2018/5/24.
  */
-public class ExportFinancialPdfFile implements ExportFile{
+public class ExportFinancialPdfFile implements ExportFile {
 
     @Override
     public boolean export(String data) {

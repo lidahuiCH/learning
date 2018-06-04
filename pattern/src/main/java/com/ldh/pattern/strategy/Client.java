@@ -1,7 +1,5 @@
 package com.ldh.pattern.strategy;
 
-import com.sun.tools.javac.util.Convert;
-
 public class Client {
     public static void main(String[] arg) {
         double totlePrice = 0d;
