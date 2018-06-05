@@ -1,5 +1,7 @@
 package com.ldh.pattern.factory.factorymethod;
 
+import com.ldh.pattern.factory.Operation;
+
 /**
  * Created on 2018/5/24.
  * 工厂方法模式和简单工厂模式在结构上的不同很明显。工厂方法模式的核心是一个抽象工厂类，而简单工厂模式把核心放在一个具体类上。
@@ -11,12 +13,9 @@ package com.ldh.pattern.factory.factorymethod;
 public class Client {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        String data = "";
-        ExportFactory exportHtml = new ExportHtmlFactory();
-        ExportFile ef = exportHtml.factory("financial");
-        ef.export(data);
-        ExportFactory exportPdf = new ExportPdfFactory();
-        ExportFile pf = exportPdf.factory("financial");
-        pf.export(data);
+        OperationFactory operationFactory = new AdditionFactory();
+        Operation operation=operationFactory.createOption();
+        operation.setNumber(1.2,2.4);
+        System.out.println(operation.getResult());
     }
 }
