@@ -6,6 +6,7 @@ import java.util.Iterator;
 
 /**
  * Created on 2018/6/4.
+ * List 接口继承了 Collection 接口以定义一个允许重复项的有序集合。该接口不但能够对列表的一部分进行处理，还添加了面向位置的操作
  */
 public interface List<E> extends Collection<E> {
     @Override

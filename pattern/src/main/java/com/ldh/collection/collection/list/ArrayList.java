@@ -72,4 +72,7 @@ public class ArrayList<E> implements List<E> {
     public Iterator iterator() {
         return null;
     }
+
+
+
 }
