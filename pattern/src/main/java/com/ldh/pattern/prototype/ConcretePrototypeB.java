@@ -1,8 +1,8 @@
 package com.ldh.pattern.prototype;
 
-public class ConcretePrototypeB extends  Prototype {
+public class ConcretePrototypeB extends Prototype {
 
-    ConcretePrototypeB(String id){
+    ConcretePrototypeB(String id) {
         super(id);
     }
 

@@ -11,7 +11,7 @@ public abstract class Operation {
         return 0;
     }
 
-    public void setNumber(double numberA,double numberB){
+    public void setNumber(double numberA, double numberB) {
         this.numberA = numberA;
         this.numberB = numberB;
     }

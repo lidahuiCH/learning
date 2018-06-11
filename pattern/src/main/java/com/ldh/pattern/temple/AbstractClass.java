@@ -6,7 +6,7 @@ public abstract class AbstractClass {
 
     abstract void PrimitiveOperation2();
 
-    public void TempleMethod(){
+    public void TempleMethod() {
         PrimitiveOperation1();
         PrimitiveOperation2();
     }

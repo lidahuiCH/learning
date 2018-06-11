@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class CollectionTest {
     @Test
-    public void ArrayList(){
+    public void ArrayList() {
         ArrayList<String> arrayList = new ArrayList<String>();
         arrayList.iteractor().hasNext();
     }

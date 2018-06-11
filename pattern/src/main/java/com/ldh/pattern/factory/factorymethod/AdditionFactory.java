@@ -5,7 +5,9 @@ import com.ldh.pattern.factory.Operation;
 
 public class AdditionFactory extends OperationFactory {
     @Override
-    public Operation createOption(){
+    public Operation createOption() {
         return new Addition();
-    };
+    }
+
+    ;
 }

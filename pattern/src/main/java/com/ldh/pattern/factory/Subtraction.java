@@ -8,12 +8,12 @@ public class Subtraction extends Operation {
     private double numberB;
 
     @Override
-    public double getResult(){
-        return Double.valueOf(numberA)-numberB;
+    public double getResult() {
+        return Double.valueOf(numberA) - numberB;
     }
 
     @Override
-    public void setNumber(double numberA,double numberB){
+    public void setNumber(double numberA, double numberB) {
         this.numberA = numberA;
         this.numberB = numberB;
     }

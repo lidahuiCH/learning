@@ -14,8 +14,8 @@ public class Client {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         OperationFactory operationFactory = new AdditionFactory();
-        Operation operation=operationFactory.createOption();
-        operation.setNumber(1.2,2.4);
+        Operation operation = operationFactory.createOption();
+        operation.setNumber(1.2, 2.4);
         System.out.println(operation.getResult());
     }
 }
