@@ -29,13 +29,12 @@ package com.ldh.pattern.factory.builder;
  */
 public class Client {
     public static void main(String[] args) {
-        Builder builder = new ConcreteBuilder();
-        Director director = new Director(builder);
-        director.construct();
-        Product product = builder.retrieveResult();
-        System.out.println(product.getPart1());
-        System.out.println(product.getPart2());
-        Integer isDelete = 0;
-        System.out.println(isDelete.compareTo(0));
+        Builder b1 = new ConcreteBuilder();
+        Builder b2 = new ConcreteBuilder2();
+        Director director = new Director();
+        director.construct(b1);
+        System.out.println(b1.retrieveResult().getPart1());
+        director.construct(b2);
+        System.out.println(b2.retrieveResult().getPart1());
     }
 }

@@ -3,7 +3,7 @@ package com.ldh.pattern.factory.builder;
 /**
  * Created on 2018/5/24.
  */
-public class ConcreteBuilder implements Builder {
+public class ConcreteBuilder extends Builder {
 
     private Product product = new Product();
 
@@ -13,7 +13,7 @@ public class ConcreteBuilder implements Builder {
     @Override
     public void buildPart1() {
         //构建产品的第一个零件
-        product.setPart1("编号：9527");
+        product.setPart1("具体建造者1part1");
     }
 
     /**
@@ -22,7 +22,7 @@ public class ConcreteBuilder implements Builder {
     @Override
     public void buildPart2() {
         //构建产品的第二个零件
-        product.setPart2("名称：XXX");
+        product.setPart2("具体建造者1part2");
     }
 
     /**
