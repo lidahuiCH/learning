@@ -10,7 +10,7 @@ public class Addition extends Operation {
 
     @Override
     public double getResult() {
-        return Double.valueOf(numberA) + numberB;
+        return numberA + numberB;
     }
 
     @Override
